@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Your Shortened URL</h1>
+<p>Short URL: <a href="{{ url_for('redirect_url', short_url=short_url, _external=True) }}">{{ url_for('redirect_url', short_url=short_url, _external=True) }}</a></p>
+{% endblock %}
